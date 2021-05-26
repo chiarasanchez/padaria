@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Pão & Bolo Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        
+        *{
+            margin:0px;
+            padding:0px;
+        }
+
+        html{
+            scroll-behavior:smooth;
+        }
+
+        #menu{}
+
+        .menu_topo{
+            list-style-type: none; 
+            text-align: center;
+        }
+
+        .menu_topo li{
+            display: inline-block;
+            padding-right: 50px;
+            vertical-align: middle;
+        }
+        .menu_topo li img{
+            width: 150px;
+            height: 150px;
+            padding-left: 50px;
+            padding-right:50px;
+        }
+        .menu_topo a{
+            text-decoration: none;
+            color: #000000;
+        }
+
+        a:hover{
+            color: #bb9230;
+        }
+        #inicio{
+            background-image:url('imagens/fundo_inicio.jpg');
+            width:100%;
+            height:800px;
+            background-size: cover;
+            padding-top: 50px;
+        }
+
+        #inicio img{
+            margin-top:150px;
+            margin-left:46%;
+        }
+
+        .titulo_inicio{
+            font-family: 'Cormorant', serif;
+            color: #ffffff;
+            font-size:100px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .pao_bolo{
+            font-family: 'Great Vibes', cursive;
+            color:#ffffff;
+            font-size:50px;
+            text-align: center;
+        }
+
+        #sobre{
+            width: 100%;
+            height: 650px;
+        }
+
+        .tbl_sobre{
+            width:80%;
+            margin-left:10%;
+            padding-top:180px;
+        }
+
+        .tbl_sobre_titulo{
+            font-family: 'Cormorant', serif;
+            font-size:50px;
+            font-weight:500;
+            color:#000000;
+            padding-bottom:50px;
+
+        }
+
+        .tbl_sobre_conteudo{
+            font-family: 'Cormorant', serif;
+            font-size:20px;
+            font-weight:300;
+            color:#545454;
+
+        }
+
+        .tbl_sobre img{
+            width: 250px;
+            height:280px;
+        }
+        #produtos{
+            width: 100%;
+            height:660px;
+            background-color: #f5f2e3;
+        }
+
+        .produtos_titulo{
+            font-family: 'Cormorant', serif;
+            font-size: 40px;
+            font-weight: 500;
+            color: #000000;
+            text-align:center;
+            padding-top:60px; 
+            padding-bottom: 70px;
+        }
+
+        .lista_produtos li{
+            display: inline-block;
+        }
+
+        .lista_produtos img{
+            width:250px;
+            height:250px;
+        }
+
+        .lista_produtos{
+            text-align:center;
+            padding-bottom:50px;
+        }
+
+        .desc_produtos{
+            width: 80%;
+            margin-left: 10%;
+            list-style-type:none;
+        }
+
+        .desc_produtos li{
+            display: table-cell;
+            font-family:'Cormorant', serif;
+            font-size:25px;
+            color:#000000;
+            font-weight:400px;
+        }
+
+        .dot{
+            border-bottom:1px dotted #000000;
+            width: 90%;
+        }
+
+        .nome_produtos{
+            white-space:nowrap;
+            width:1%;
+        }
+
+        
+        #contato{
+            width:100%;
+            height:300px;
+            background-color:#1d1c1c;
+        }
+
+        #contato img{
+            width:200px;
+            height: 180px;
+        }
+
+        .contato_titulo{
+            font-family:'Cormorant', serif;
+            font-size:40px;
+            font-weight:600;
+            color:#ffffff;
+        }
+
+        .lista_contato{
+            list-style-type: none;
+        }
+
+        .lista_contato li{
+            font-family:'Cormorant', serif;
+            font-size:16px;
+            font-weight:400;
+            color:#ffffff;
+            padding-top: 5px;
+        }
+
+        #contato table{
+            margin-left:25%;
+            padding-top:25px;
+        }
+
+        #contato table td{
+            padding-right: 100px;
+        }
+
+        #rodape{
+            width:80%;
+            margin-left:10%;
+            border-top:1px solid #545454;
+            margin-top:25px;
+        }
+
+        #rodape p{
+            font-family:'Cormorant', serif;
+            font-size:16px;
+            font-weight:400;
+            color:#545454;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="menu"><!--cria uma divisão na tela,ou seja, funciona tipo uma camada-->
+        <ul class="menu_topo">
+            <li><a href="#inicio">ÍNICIO</a> </li>
+            <li><a href="#sobre">SOBRE</a></li>
+            <li><img src="/imagens/logo.jpg"></li>
+            <li><a href="#produtos">PRODUTOS</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+        </ul>
+    </div>
+
+    <div id="inicio">
+        <img src="imagens/trigo.png">
+        <p class="titulo_inicio">SABOR INIGUALÁVEL</p>
+        <p class="pao_bolo">Pão & Bolo</p>
+    </div>
+
+    <div id="sobre">
+        <table class="tbl_sobre">
+            <tr>
+                <td><p class="tbl_sobre_titulo">RECEITAS TRADICIONAIS.</p>
+                <br/>
+                <p class="tbl_sobre_conteudo">A padadria Pão & Bolo elabora seus produtos e trabalha com as receitas mais 
+                    tradicionais existentes. O cheirinho inigualável de um pão recem saído do
+                forno você só encontra aqui.</p></td>
+                <td><img src="imagens/sobre1.jpg"></td>
+                <td><img src="imagens/sobre2.jpg"></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="produtos">
+        <p class="produtos_titulo">PRODUTOS DELICIOSOS</p>
+        <ul class="lista_produtos">
+            <li><img src="imagens/p1.jpg"></li>
+            <li><img src="imagens/p2.jpg"></li>
+            <li><img src="imagens/p4.jpg"></li>
+            <li><img src="imagens/p5.jpg"></li>
+        </ul>
+
+        <ul class="desc_produtos">
+            <li class="nome_produtos">Cereais Multigraõs</li>
+            <li class="dot"></li>
+            <li>$19,00</li>
+        </ul>
+
+        <ul class="desc_produtos">
+            <li class="nome_produtos">Bolo de Chocolate</li>
+            <li class="dot"></li>
+            <li>$19,00</li>
+        </ul>
+
+        <ul class="desc_produtos">
+            <li class="nome_produtos">Pão de Ovos</li>
+            <li class="dot"></li>
+            <li>$24,00</li>
+        </ul>
+
+        <ul class="desc_produtos">
+            <li  class="nome_produtos">Torta de Limão</li>
+            <li class="dot"></li>
+            <li>$07,00</li>
+        </ul>
+    </div>
+
+    <div id="contato">
+        <table>
+            <td> <img src="imagens/logo_transparente.png"></td>
+            <td>
+                <p class="contato_titulo">CONTATO</p><br/>
+                <ul class="lista_contato">
+                    <li>Endereço: Rua dos Sabias, nº55, Vila Genoveva</li>
+                    <li>Telefone: (11) 4567-8765</li>
+                    <li> E-mail: contato@paoebolo.com.br</li>
+                </ul>
+            </td>
+            </table>
+        
+        <div id="rodape">
+           <p>2020 - Desenvolvido por: Prof. Ricardo</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
